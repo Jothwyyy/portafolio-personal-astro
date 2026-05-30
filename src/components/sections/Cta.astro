@@ -1,0 +1,21 @@
+---
+import Button from '../common/Button.astro';
+import { homePage } from '../../data/home';
+---
+
+<section id="cta">
+	<header>
+		<h2>{homePage.cta.title}</h2>
+		<p>{homePage.cta.description}</p>
+	</header>
+	<footer>
+		<ul class="buttons">
+			<li>
+				<Button href={homePage.cta.primary.href} label={homePage.cta.primary.label} variant="primary" />
+			</li>
+			<li>
+				<Button href={homePage.cta.secondary.href} label={homePage.cta.secondary.label} />
+			</li>
+		</ul>
+	</footer>
+</section>

@@ -1,0 +1,15 @@
+---
+interface Props {
+	href?: string;
+	variant?: 'default' | 'primary';
+	label: string;
+}
+
+const {
+	href = '#',
+	variant = 'default',
+	label,
+} = Astro.props;
+---
+
+<a class={`button ${variant === 'primary' ? 'primary' : ''}`.trim()} href={href}>{label}</a>

@@ -1,0 +1,16 @@
+---
+import Button from '../common/Button.astro';
+import { homePage } from '../../data/home';
+---
+
+<section id="banner">
+	<div class="inner">
+		<header>
+			<h2>{homePage.banner.title}</h2>
+		</header>
+		<p>{homePage.banner.description}</p>
+		<footer>
+			<Button href={homePage.banner.cta.href} label={homePage.banner.cta.label} />
+		</footer>
+	</div>
+</section>

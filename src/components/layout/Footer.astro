@@ -1,0 +1,15 @@
+---
+import { site } from '../../data/site';
+import { socialLinks } from '../../data/social';
+---
+
+<footer id="footer">
+	<ul class="icons">
+		{socialLinks.map((link) => (
+			<li>
+				<a href={link.href} aria-label={link.label}>{link.label}</a>
+			</li>
+		))}
+	</ul>
+	<p>{site.footerText}</p>
+</footer>

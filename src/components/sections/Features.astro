@@ -1,0 +1,16 @@
+---
+import { homePage } from '../../data/home';
+---
+
+<section class="wrapper style1 container special">
+	<div class="row">
+		{homePage.features.map((feature) => (
+			<div class="col-4 col-12-narrower">
+				<section>
+					<h3>{feature.title}</h3>
+					<p>{feature.description}</p>
+				</section>
+			</div>
+		))}
+	</div>
+</section>
