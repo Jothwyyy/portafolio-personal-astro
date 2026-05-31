@@ -5,9 +5,9 @@ import { navigation } from '../../data/navigation';
 <nav id="nav" aria-label="Principal">
   <ul>
     {navigation.map((item) => (
-      <li>
+      <li class={item.class}>
         {item.href ? (
-          <a href={item.href} class={item.class}>
+          <a href={item.href}>
             {item.label}
           </a>
         ) : (
