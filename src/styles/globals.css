@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,900");
 @import url("./common/icons.css");
+@import url("./layout/grid.css");
+@import url("./layout/wrapper.css");
 @import url("./layout/section-article.css");
+@import url("./sections/main.css");
+@import url("./responsive.css");
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,

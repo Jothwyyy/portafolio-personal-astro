@@ -73,3 +73,78 @@
 	footer.major {
 		padding-top: 3em;
 	}
+
+@media screen and (max-width: 1280px) {
+	header.major {
+		padding-bottom: 1.5em;
+	}
+
+	footer.major {
+		padding-top: 2em;
+	}
+}
+
+@media screen and (max-width: 980px) {
+	header br {
+		display: none;
+	}
+
+	header.major {
+		padding-bottom: 1em;
+	}
+
+	header.special {
+		padding-left: 2.5em;
+		padding-right: 2.5em;
+	}
+
+	footer.major {
+		padding-top: 1.5em;
+	}
+}
+
+@media screen and (max-width: 840px) {
+	header.major {
+		padding-bottom: 0.25em;
+	}
+
+	header.special {
+		margin-bottom: 4em;
+		padding-top: 5em;
+	}
+
+	header.special:before,
+	header.special:after {
+		width: 40%;
+	}
+
+	header.special h2 + p {
+		padding-top: 1.25em;
+	}
+}
+
+@media screen and (max-width: 736px) {
+	header.major {
+		padding-bottom: 0;
+	}
+
+	header.special {
+		margin-bottom: 3em;
+		padding-left: 1.5em;
+		padding-right: 1.5em;
+	}
+
+	header.special:before,
+	header.special:after {
+		width: 38%;
+	}
+
+	header.special .icon {
+		font-size: 0.75em;
+		top: 1.5em;
+	}
+
+	footer.major {
+		padding-top: 0;
+	}
+}
