@@ -5,7 +5,7 @@ export const homePage = {
 		author: 'HTML5 UP',
 		cta: {
 			href: '#main',
-			label: 'Ver mas',
+			label: 'Tell Me More',
 		},
 	},
 	intro: {

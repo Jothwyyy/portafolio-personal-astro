@@ -27,6 +27,8 @@ export const navigation = [
   {
 	label: 'Sign Up',
 	href: '#',
-	class: 'button primary',
+	button: {
+    variant: 'primary'
+  },
   }
 ];

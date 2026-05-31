@@ -1,17 +1,20 @@
 ---
 import { navigation } from '../../data/navigation';
+import Button from '../common/Button.astro';
 ---
 
 <nav id="nav" aria-label="Principal">
   <ul>
     {navigation.map((item) => (
-      <li class={item.class}>
-        {item.href ? (
-          <a href={item.href}>
-            {item.label}
-          </a>
+      <li class={item.class ?? ''}>
+        {item.button ? (
+          <Button 
+            href={item.href ?? '#'} 
+            label={item.label} 
+            variant={item.button.variant} 
+          />
         ) : (
-          <a href="#">
+          <a href={item.href ?? '#'}>
             {item.label}
           </a>
         )}
@@ -42,6 +45,8 @@ import { navigation } from '../../data/navigation';
           </ul>
         )}
       </li>
+
+      
     ))}
   </ul>
 </nav>
