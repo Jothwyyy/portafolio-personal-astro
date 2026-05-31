@@ -46,6 +46,7 @@ export const homePage = {
 			],
 		},
 		three: {
+			headerType: 'major',
 			title: 'Bloques del portafolio',
 			description: 'Espacio reservado para proyectos, casos de estudio o trabajos destacados.',
 			items: [

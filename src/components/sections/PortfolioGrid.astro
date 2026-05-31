@@ -3,16 +3,16 @@ import SectionTitle from '../common/SectionTitle.astro';
 import { homePage } from '../../data/home';
 
 const section = homePage.sections.three;
+const headerType = homePage.sections.three.headerType
 ---
 
 <section class="wrapper style3 container special">
-	<SectionTitle title={section.title} description={section.description} />
+	<SectionTitle headerType={headerType} title={section.title} description={section.description} />
 	<div class="row">
 		{section.items.map((item) => (
 			<div class="col-6 col-12-narrower">
 				<section>
 					<h3>{item.title}</h3>
-					<p>{item.description}</p>
 				</section>
 			</div>
 		))}

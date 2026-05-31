@@ -1,16 +1,18 @@
 ---
 interface Props {
+	headerType: string,
 	title: string;
 	description?: string;
 }
 
 const {
+	headerType,
 	title,
 	description,
 } = Astro.props;
 ---
 
-<header class="special container">
+<header class=`"${headerType}"`>
 	<h2>{title}</h2>
 	{description && <p>{description}</p>}
 </header>
