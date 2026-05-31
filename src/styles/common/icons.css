@@ -113,3 +113,34 @@
     .icon > .label {
         display: none;
     }
+
+@media screen and (max-width: 840px) {
+    ul.featured-icons {
+        margin: 0;
+    }
+
+    ul.featured-icons li {
+        display: inline-block;
+        float: none;
+        width: auto;
+    }
+
+    ul.featured-icons li .icon {
+        font-size: 4em;
+        width: 1.25em;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .icon.circle {
+        font-size: 1em;
+    }
+
+    ul.icons li {
+        padding-left: 0.25em;
+    }
+
+    ul.featured-icons li .icon {
+        width: 1.1em;
+    }
+}
