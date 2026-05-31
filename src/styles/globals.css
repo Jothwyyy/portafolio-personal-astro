@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,900");
 @import url(/assets/css/fontawesome-all.min.css);
+@import url("./common/icons.css");
 @import url("./layout/section-article.css");
 
 html, body, div, span, applet, object,

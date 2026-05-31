@@ -1,7 +1,10 @@
 ---
-import SectionTitle from '../common/SectionTitle.astro';
 import { homePage } from '../../data/home';
+import Icon from '../common/Icon.astro';
 ---
 
-
-<SectionTitle title={homePage.intro.title} description={homePage.intro.description} />
+<header class="special container">
+	<Icon name="solid fa-chart-bar" />
+	<h2>{homePage.intro.title}</h2>
+	<p>{homePage.intro.description}</p>
+</header>
