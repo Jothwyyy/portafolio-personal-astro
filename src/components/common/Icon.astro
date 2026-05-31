@@ -10,4 +10,6 @@ const {
 } = Astro.props;
 ---
 
-<span class={`icon ${name}`} aria-label={label}></span>
+<span class={`icon ${name}`} aria-label={label}>
+	<span class="label">{label}</span>
+</span>
