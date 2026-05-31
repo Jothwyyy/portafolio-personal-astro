@@ -6,6 +6,7 @@ export const navigation = [
   },
   {
     label: 'Layouts',
+	class: 'submenu',
     layouts: [
       { href: '/left-sidebar', label: 'Left Sidebar' },
       { href: '/right-sidebar', label: 'Right Sidebar' },
