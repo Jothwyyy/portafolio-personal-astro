@@ -1,10 +1,12 @@
 ---
 import { homePage } from '../../data/home';
+
+const section = homePage.sections.two;
 ---
 
 <section class="wrapper style1 container special">
 	<div class="row">
-		{homePage.features.map((feature) => (
+		{section.items.map((feature) => (
 			<div class="col-4 col-12-narrower">
 				<section>
 					<h3>{feature.title}</h3>

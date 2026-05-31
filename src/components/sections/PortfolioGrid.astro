@@ -1,12 +1,14 @@
 ---
 import SectionTitle from '../common/SectionTitle.astro';
 import { homePage } from '../../data/home';
+
+const section = homePage.sections.three;
 ---
 
 <section class="wrapper style3 container special">
-	<SectionTitle title={homePage.portfolio.title} description={homePage.portfolio.description} />
+	<SectionTitle title={section.title} description={section.description} />
 	<div class="row">
-		{homePage.portfolio.items.map((item) => (
+		{section.items.map((item) => (
 			<div class="col-6 col-12-narrower">
 				<section>
 					<h3>{item.title}</h3>
