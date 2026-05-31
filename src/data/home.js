@@ -9,8 +9,8 @@ export const homePage = {
 		},
 	},
 	intro: {
-		title: 'Estructura base lista para migracion',
-		description: 'Este contenido es provisional y se reemplazara durante la adaptacion fiel de la plantilla.',
+		title: 'As this is my twentieth freebie for HTML5 UP I decided to give it a really creative name.',
+		description: "Turns out Twenty was the best I could come up with. Anyway, lame name aside, it's minimally designed, fully responsive, built on HTML5/CSS3, and, like all my stuff, released for free under the Creative Commons Attribution 3.0 license. Have fun!",
 	},
 	features: [
 		{
