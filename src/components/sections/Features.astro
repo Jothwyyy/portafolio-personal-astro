@@ -1,5 +1,6 @@
 ---
 import { homePage } from '../../data/home';
+import Icon from '../common/Icon.astro';
 
 const section = homePage.sections.two;
 ---
@@ -9,7 +10,10 @@ const section = homePage.sections.two;
 		{section.items.map((feature) => (
 			<div class="col-4 col-12-narrower">
 				<section>
-					<h3>{feature.title}</h3>
+					<Icon name="solid featured fa-check" label="Feature" />
+					<header>
+						<h3>{feature.title}</h3>
+					</header>
 					<p>{feature.description}</p>
 				</section>
 			</div>
