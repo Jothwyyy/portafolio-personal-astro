@@ -3,11 +3,45 @@ import { navigation } from '../../data/navigation';
 ---
 
 <nav id="nav" aria-label="Principal">
-	<ul>
-		{navigation.map((item) => (
-			<li>
-				<a href={item.href}>{item.label}</a>
-			</li>
-		))}
-	</ul>
+  <ul>
+    {navigation.map((item) => (
+      <li>
+        {item.href ? (
+          <a href={item.href} class={item.class}>
+            {item.label}
+          </a>
+        ) : (
+          <a href="#">
+            {item.label}
+          </a>
+        )}
+
+        {item.layouts && (
+          <ul>
+            {item.layouts.map((layout) => (
+              <li>
+                {layout.href ? (
+                  <a href={layout.href}>{layout.label}</a>
+                ) : (
+                  <a href="#">{layout.label}</a>
+                )}
+
+                {layout.submenu && (
+                  <ul>
+                    {layout.submenu.map((submenuItem) => (
+                      <li>
+                        <a href={submenuItem.href}>
+                          {submenuItem.label}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            ))}
+          </ul>
+        )}
+      </li>
+    ))}
+  </ul>
 </nav>
