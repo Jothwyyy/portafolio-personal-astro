@@ -108,6 +108,49 @@
 				margin: 2em 0 0 0;
 			}
 
+@media screen and (max-width: 1280px) {
+	#banner {
+		background-attachment: scroll;
+	}
+}
+
+@media screen and (max-width: 980px) {
+	#banner {
+		background-size: 15em, 15em, auto, cover;
+	}
+}
+
+@media screen and (max-width: 840px) {
+	#banner {
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 736px) {
+	#banner {
+		background-size: 10em, 10em, auto, cover;
+		padding: 6em 0;
+	}
+
+	#banner .inner {
+		background: none;
+		display: block;
+		padding: 0 1.5em;
+	}
+
+	#banner .inner header h2 {
+		font-size: 1.5em;
+	}
+
+	#banner .inner p {
+		text-align: center;
+	}
+
+	#banner .inner br {
+		display: none;
+	}
+}
+
 /* Main */
 
 	#main {
