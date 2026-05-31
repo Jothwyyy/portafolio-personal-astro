@@ -1,1 +1,30 @@
-/* Tema base para overrides de la plantilla Twenty. */
+/* Tema base para la paleta de Twenty. */
+
+:root {
+	--color-text: #7c8081;
+	--color-text-strong: #3fb1a3;
+	--color-surface: #ffffff;
+	--color-surface-muted: #e8eef4;
+	--color-page: #f3f6fa;
+	--color-brand: #83d3c9;
+	--color-brand-hover: #96dad1;
+	--color-banner: #645862;
+	--color-nav-panel: #1c2021;
+	--color-white: #ffffff;
+	--color-border: rgba(124, 128, 129, 0.2);
+	--color-border-soft: rgba(124, 128, 129, 0.1);
+	--color-hover: rgba(188, 202, 206, 0.15);
+	--color-nav-button: rgba(163, 169, 170, 0.75);
+	--color-overlay-banner: rgba(52, 27, 43, 0.5);
+
+	--color-social-twitter: #70aecd;
+	--color-social-twitter-hover: #7fb7d2;
+	--color-social-facebook: #7490c3;
+	--color-social-facebook-hover: #829bc9;
+	--color-social-google: #db6b67;
+	--color-social-google-hover: #df7b77;
+	--color-social-github: #dcad8b;
+	--color-social-github-hover: #e1b89b;
+	--color-social-dribbble: #da83ae;
+	--color-social-dribbble-hover: #df93b8;
+}

@@ -65,7 +65,7 @@ button,
     input[type="reset"]:hover,
     button:hover,
     .button:hover {
-        background: rgba(188, 202, 206, 0.15);
+        background: var(--color-hover);
         border-color: inherit;
     }
 
@@ -74,9 +74,9 @@ button,
     input[type="reset"].primary,
     button.primary,
     .button.primary {
-        background: #83d3c9;
-        border-color: #83d3c9;
-        color: #fff !important;
+        background: var(--color-brand);
+        border-color: var(--color-brand);
+        color: var(--color-white) !important;
     }
 
         input[type="button"].primary:hover,
@@ -84,8 +84,8 @@ button,
         input[type="reset"].primary:hover,
         button.primary:hover,
         .button.primary:hover {
-            background: #96dad1 !important;
-            border-color: #96dad1 !important;
+            background: var(--color-brand-hover) !important;
+            border-color: var(--color-brand-hover) !important;
         }
 
     input[type="button"].fit,

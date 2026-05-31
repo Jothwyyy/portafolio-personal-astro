@@ -53,48 +53,48 @@
         }
 
         .icon.circle.fa-twitter {
-            background: #70aecd;
-            color: #fff;
+            background: var(--color-social-twitter);
+            color: var(--color-white);
         }
 
             .icon.circle.fa-twitter:hover {
-                background: #7fb7d2;
+                background: var(--color-social-twitter-hover);
             }
 
         .icon.circle.fa-facebook-f {
-            background: #7490c3;
-            color: #fff;
+            background: var(--color-social-facebook);
+            color: var(--color-white);
         }
 
             .icon.circle.fa-facebook-f:hover {
-                background: #829bc9;
+                background: var(--color-social-facebook-hover);
             }
 
         .icon.circle.fa-google-plus-g {
-            background: #db6b67;
-            color: #fff;
+            background: var(--color-social-google);
+            color: var(--color-white);
         }
 
             .icon.circle.fa-google-plus-g:hover {
-                background: #df7b77;
+                background: var(--color-social-google-hover);
             }
 
         .icon.circle.fa-github {
-            background: #dcad8b;
-            color: #fff;
+            background: var(--color-social-github);
+            color: var(--color-white);
         }
 
             .icon.circle.fa-github:hover {
-                background: #e1b89b;
+                background: var(--color-social-github-hover);
             }
 
         .icon.circle.fa-dribbble {
-            background: #da83ae;
-            color: #fff;
+            background: var(--color-social-dribbble);
+            color: var(--color-white);
         }
 
             .icon.circle.fa-dribbble:hover {
-                background: #df93b8;
+                background: var(--color-social-dribbble-hover);
             }
 
     .icon.featured {
