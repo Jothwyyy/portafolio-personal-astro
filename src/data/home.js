@@ -1,7 +1,8 @@
 export const homePage = {
 	banner: {
 		title: 'TWENTY',
-		description: 'Base inicial para migrar la plantilla original a Astro.',
+		description: 'This is Twenty, a free responsive template by ',
+		author: 'HTML5 UP',
 		cta: {
 			href: '#main',
 			label: 'Ver mas',
