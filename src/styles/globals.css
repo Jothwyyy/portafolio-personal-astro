@@ -1,9 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,900");
+@import url("./theme.css");
+@import url("./common/button.css");
 @import url("./common/icons.css");
 @import url("./layout/grid.css");
 @import url("./layout/wrapper.css");
 @import url("./layout/section-article.css");
+@import url("./sections/header.css");
+@import url("./sections/banner.css");
 @import url("./sections/main.css");
+@import url("./sections/footer.css");
 @import url("./responsive.css");
 
 html, body, div, span, applet, object,
