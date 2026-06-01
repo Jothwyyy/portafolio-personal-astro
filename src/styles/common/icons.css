@@ -114,6 +114,22 @@
         display: none;
     }
 
+ul.icons {
+    list-style: none;
+    padding-left: 0;
+    cursor: default;
+}
+
+    ul.icons li {
+        display: inline-block;
+        line-height: 1em;
+        padding-left: 0.5em;
+    }
+
+        ul.icons li:first-child {
+            padding-left: 0;
+        }
+
 ul.featured-icons {
     cursor: default;
     margin: -0.75em 0 0 0;
