@@ -582,3 +582,56 @@ Formato de respuesta esperado:
 
 No refactorices botones, íconos, header, banner, footer ni grid base en esta etapa, a menos que sea necesario para integrar correctamente las media queries. El objetivo principal es agregar y organizar los estilos responsivos.
 ```
+
+### A.6 Refactor de estilos de formulario para Astro
+
+```text
+Actúa como un desarrollador frontend experto en Astro, HTML y CSS modular.
+
+Estoy migrando una plantilla HTML/CSS tradicional a un proyecto Astro. Necesito refactorizar los estilos relacionados con el formulario para integrarlos correctamente en Astro sin romper el diseño original.
+
+Objetivo:
+Pasar los estilos del formulario desde el CSS original hacia una estructura más organizada dentro del proyecto Astro.
+
+Contexto del proyecto:
+
+* Estoy usando Astro.
+* La plantilla original viene de HTML5UP.
+* Quiero conservar la apariencia visual original.
+* El formulario estará dentro de un componente o página Astro.
+* Los estilos deben organizarse de forma clara, reutilizable y mantenible.
+* Ya tengo una estructura con componentes como Header, Nav, Footer y páginas Astro.
+
+Tareas que debes realizar:
+
+1. Identificar todos los estilos CSS relacionados con formularios, inputs, textarea, selects, labels, botones y estados como focus, hover o disabled.
+2. Separar únicamente los estilos necesarios para el formulario.
+3. Adaptar esos estilos para que funcionen correctamente en Astro.
+4. Evitar duplicar estilos globales innecesarios.
+5. Mantener compatibilidad con las clases originales de la plantilla si todavía son necesarias.
+6. Proponer una ubicación adecuada para los estilos, por ejemplo:
+
+   * `src/styles/forms.css`
+   * estilos globales dentro de `global.css`
+   * o estilos scoped dentro del componente `.astro`, según convenga.
+7. Explicar qué estilos deben quedarse globales y cuáles pueden estar dentro del componente.
+8. Si hay selectores demasiado generales, refactorizarlos para que no afecten otras partes del sitio.
+9. Mantener el diseño responsive del formulario.
+10. Entregar el código final adaptado para Astro.
+
+Archivos que te voy a proporcionar:
+
+* El componente o página `.astro` donde está el formulario.
+* El CSS original de la plantilla.
+* La estructura actual de estilos del proyecto.
+
+Quiero que respondas con:
+
+* Una explicación breve de qué estilos detectaste.
+* Una propuesta de organización.
+* El CSS refactorizado.
+* El ejemplo de cómo importarlo o aplicarlo en Astro.
+* Recomendaciones para evitar conflictos con otros estilos del sitio.
+
+No cambies la apariencia original del formulario salvo que sea necesario para mejorar la organización del código.
+```
