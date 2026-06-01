@@ -1,14 +1,18 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro';
-import { buildPageTitle } from '../lib/seo';
+import SidebarHeader from '../components/sections/SidebarHeader.astro';
+import SidebarContent from '../components/sections/SidebarContent.astro';
+import RelatedCards from '../components/sections/RelatedCards.astro';
+import { buildPageTitle } from '../lib/seo'
+import { noSidebarPage } from '../data/noSidebar';
 ---
 
 <PageLayout title={buildPageTitle('No Sidebar')} bodyClass='no-sidebar is-preload'>
-	<article id="main">
-		
+	<article id="main">	
+		<SidebarHeader header={noSidebarPage.header}/>
+		<section class="wrapper style4 container">
+			<SidebarContent content={noSidebarPage.content}/>
+		</section>
+		<RelatedCards items={noSidebarPage.related}/>
 	</article>
-	<section class="wrapper style1 container">
-		<h2>No Sidebar</h2>
-		<p>Pagina base para migrar `no-sidebar.html`.</p>
-	</section>
 </PageLayout>
