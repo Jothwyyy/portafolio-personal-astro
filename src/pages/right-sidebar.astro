@@ -1,11 +1,16 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro';
+import RightSidebarHeader from '../components/sections/RightSidebarHeader.astro';
+import RightSidebarMain from '../components/sections/RightSidebarMain.astro'
+import RelatedCards from '../components/sections/RelatedCards.astro';
 import { buildPageTitle } from '../lib/seo';
+import { rightSidebarPage} from '../data/rightSidebar'
 ---
 
-<PageLayout title={buildPageTitle('Right Sidebar')}>
-	<section class="wrapper style1 container">
-		<h2>Right Sidebar</h2>
-		<p>Pagina base para migrar `right-sidebar.html`.</p>
-	</section>
+<PageLayout title={buildPageTitle('Right Sidebar')} bodyClass='right-sidebar is-preload'>
+	<article id="main">
+		<RightSidebarHeader header={rightSidebarPage.header} />
+		<RightSidebarMain sidebar={rightSidebarPage.sidebar} content={rightSidebarPage.content}/>
+		<RelatedCards items={rightSidebarPage.related} />
+	</article>
 </PageLayout>
