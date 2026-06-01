@@ -36,13 +36,14 @@
 
 		header.special h2 {
 			margin: 0 auto;
+			margin-bottom: 0;
 			max-width: 32em;
 			line-height: 1.75em;
 			text-align: center;
 		}
 
 		header.special p {
-			margin: 1.5em auto 0 auto;
+			margin: 0 auto;
 			max-width: 37em;
 		}
 
