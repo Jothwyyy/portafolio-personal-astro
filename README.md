@@ -1,43 +1,74 @@
-# Astro Starter Kit: Minimal
+# portafolio-personal-astro
 
-```sh
-npm create astro@latest -- --template minimal
-```
+Proyecto Astro orientado a migrar la plantilla **Twenty** de **HTML5 UP** a una implementación modular, mantenible y escalable.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Objetivo
 
-## 🚀 Project Structure
+Reconstruir la plantilla original dentro de Astro manteniendo:
 
-Inside of your Astro project, you'll see the following folders and files:
+- fidelidad visual,
+- comportamiento responsive,
+- navegación y scripts originales cuando sea necesario,
+- separación clara entre layouts, componentes, estilos y datos.
+
+## Estado actual
+
+El repositorio ya incluye:
+
+- arquitectura modular en `src/`,
+- home migrada por secciones,
+- refactor del CSS original hacia módulos reutilizables,
+- colección de contenido en `src/content/posts/`,
+- páginas internas en proceso de migración progresiva.
+
+## Estructura principal
 
 ```text
-/
+.
+├── docs/
 ├── public/
+│   └── assets/
 ├── src/
-│   └── pages/
-│       └── index.astro
+│   ├── components/
+│   │   ├── common/
+│   │   ├── layout/
+│   │   └── sections/
+│   ├── content/
+│   ├── data/
+│   ├── layouts/
+│   ├── pages/
+│   └── styles/
+├── vendor/
 └── package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Scripts
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+| Comando | Descripción |
+| --- | --- |
+| `npm install` | Instala dependencias |
+| `npm run dev` | Inicia el entorno local de desarrollo |
+| `npm run build` | Genera la build estática en `dist/` |
+| `npm run preview` | Sirve la build generada localmente |
 
-Any static assets, like images, can be placed in the `public/` directory.
+## Documentación
 
-## 🧞 Commands
+La documentación técnica principal se encuentra en:
 
-All commands are run from the root of the project, from a terminal:
+- `docs/documentacion-migracion-twenty-astro.md`
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+Incluye:
 
-## 👀 Want to learn more?
+- arquitectura definida,
+- clasificación de componentes,
+- decisiones técnicas,
+- troubleshooting notes,
+- registro de prompts utilizados.
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Referencia del template original
+
+La fuente de migración se conserva en:
+
+- `vendor/twenty/`
+
+Este directorio se utiliza como referencia visual, estructural y funcional durante el proceso de adaptación a Astro.
