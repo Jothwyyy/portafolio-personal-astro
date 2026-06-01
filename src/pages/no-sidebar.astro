@@ -3,7 +3,10 @@ import PageLayout from '../layouts/PageLayout.astro';
 import { buildPageTitle } from '../lib/seo';
 ---
 
-<PageLayout title={buildPageTitle('No Sidebar')}>
+<PageLayout title={buildPageTitle('No Sidebar')} bodyClass='no-sidebar is-preload'>
+	<article id="main">
+		
+	</article>
 	<section class="wrapper style1 container">
 		<h2>No Sidebar</h2>
 		<p>Pagina base para migrar `no-sidebar.html`.</p>

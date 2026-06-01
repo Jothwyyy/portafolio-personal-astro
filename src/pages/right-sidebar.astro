@@ -1,6 +1,6 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro';
-import RightSidebarHeader from '../components/sections/RightSidebarHeader.astro';
+import SidebarHeader from '../components/sections/SidebarHeader.astro';
 import RightSidebarMain from '../components/sections/RightSidebarMain.astro'
 import RelatedCards from '../components/sections/RelatedCards.astro';
 import { buildPageTitle } from '../lib/seo';
@@ -9,7 +9,7 @@ import { rightSidebarPage} from '../data/rightSidebar'
 
 <PageLayout title={buildPageTitle('Right Sidebar')} bodyClass='right-sidebar is-preload'>
 	<article id="main">
-		<RightSidebarHeader header={rightSidebarPage.header} />
+		<SidebarHeader header={rightSidebarPage.header} />
 		<RightSidebarMain sidebar={rightSidebarPage.sidebar} content={rightSidebarPage.content}/>
 		<RelatedCards items={rightSidebarPage.related} />
 	</article>

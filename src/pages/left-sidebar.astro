@@ -1,6 +1,6 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro';
-import LeftSidebarHeader from '../components/sections/LeftSidebarHeader.astro';
+import SidebarHeader from '../components/sections/SidebarHeader.astro';
 import LeftSidebarMain from '../components/sections/LeftSidebarMain.astro';
 import RelatedCards from '../components/sections/RelatedCards.astro';
 import { buildPageTitle } from '../lib/seo';
@@ -9,7 +9,7 @@ import { leftSidebarPage } from '../data/leftSidebar';
 
 <PageLayout title={buildPageTitle('Left Sidebar')} bodyClass='left-sidebar is-preload'>
 	<article id="main" class="left-sidebar-page">
-		<LeftSidebarHeader header={leftSidebarPage.header} />
+		<SidebarHeader header={leftSidebarPage.header} />
 		<LeftSidebarMain sidebar={leftSidebarPage.sidebar} content={leftSidebarPage.content} />
 		<RelatedCards items={leftSidebarPage.related} />
 	</article>
