@@ -1,11 +1,16 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro';
+import LeftSidebarHeader from '../components/sections/LeftSidebarHeader.astro';
+import LeftSidebarMain from '../components/sections/LeftSidebarMain.astro';
+import RelatedCards from '../components/sections/RelatedCards.astro';
 import { buildPageTitle } from '../lib/seo';
+import { leftSidebarPage } from '../data/leftSidebar';
 ---
 
-<PageLayout title={buildPageTitle('Left Sidebar')}>
-	<section class="wrapper style1 container">
-		<h2>Left Sidebar</h2>
-		<p>Pagina base para migrar `left-sidebar.html`.</p>
-	</section>
+<PageLayout title={buildPageTitle('Left Sidebar')} bodyClass='left-sidebar is-preload'>
+	<article id="main">
+		<LeftSidebarHeader header={leftSidebarPage.header} />
+		<LeftSidebarMain sidebar={leftSidebarPage.sidebar} content={leftSidebarPage.content} />
+		<RelatedCards items={leftSidebarPage.related} />
+	</article>
 </PageLayout>
