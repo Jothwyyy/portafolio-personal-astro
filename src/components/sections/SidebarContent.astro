@@ -1,0 +1,17 @@
+---
+const { content } = Astro.props;
+---
+
+<div class="content">
+	<section>
+		<a href="#" class="image featured">
+			<img src={content.image} alt="" />
+		</a>
+		<header>
+			<h3>{content.title}</h3>
+		</header>
+		{content.paragraphs.map((paragraph) => (
+			<p>{paragraph}</p>
+		))}
+	</section>
+</div>

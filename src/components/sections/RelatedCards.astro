@@ -1,0 +1,25 @@
+---
+const { items } = Astro.props;
+---
+
+<section class="wrapper style1 container special">
+	<div class="row">
+		{items.map((item) => (
+			<div class="col-4 col-12-narrower">
+				<section>
+					<header>
+						<h3>{item.title}</h3>
+					</header>
+					<p>{item.description}</p>
+					{item.cta && (
+						<footer>
+							<ul class="buttons">
+								<li><a href={item.cta.href} class="button small">{item.cta.label}</a></li>
+							</ul>
+						</footer>
+					)}
+				</section>
+			</div>
+		))}
+	</div>
+</section>

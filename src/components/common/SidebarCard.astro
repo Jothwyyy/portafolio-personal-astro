@@ -1,0 +1,22 @@
+---
+const { item } = Astro.props;
+---
+
+<section>
+	{item.image && (
+		<a href="#" class="image featured">
+			<img src={item.image} alt="" />
+		</a>
+	)}
+	<header>
+		<h3>{item.title}</h3>
+	</header>
+	<p>{item.description}</p>
+	{item.cta && (
+		<footer>
+			<ul class="buttons">
+				<li><a href={item.cta.href} class="button small">{item.cta.label}</a></li>
+			</ul>
+		</footer>
+	)}
+</section>
