@@ -2,6 +2,30 @@
 import SidebarCard from '../common/SidebarCard.astro';
 import SidebarContent from './SidebarContent.astro';
 
+
+interface Cta {
+	href: string;
+	label: string;
+}
+
+interface SidebarItem {
+	title: string;
+	description: string;
+	image?: string;
+	cta: Cta;
+}
+
+interface Content {
+	title: string;
+	image: string;
+	paragraphs: string[];
+}
+
+interface Props {
+	sidebar: SidebarItem[];
+	content: Content;
+}
+
 const { sidebar, content } = Astro.props;
 ---
 

@@ -1,4 +1,19 @@
 ---
+interface Cta {
+	href: string;
+	label: string;
+}
+
+interface Item {
+	title: string;
+	description: string;
+	cta: Cta;
+}
+
+interface Props {
+	items: Item[];
+}
+
 const { items } = Astro.props;
 ---
 

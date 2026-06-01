@@ -1,4 +1,12 @@
 ---
+interface Props {
+	content: {
+		image: string;
+		title: string;
+		paragraphs: string[];
+	};
+};
+
 const { content } = Astro.props;
 ---
 
