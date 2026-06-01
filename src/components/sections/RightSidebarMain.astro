@@ -1,0 +1,21 @@
+---
+import SidebarCard from '../common/SidebarCard.astro';
+import SidebarContent from './SidebarContent.astro';
+
+const { sidebar, content } = Astro.props;
+---
+
+<section class="wrapper style4 container">
+	<div class="row gtr-150">
+		<div class="col-8 col-12-narrower">
+            <SidebarContent content={content}/>
+		</div>
+        <div class="col-4 col-12-narrower">
+            <div class="sidebar">
+                {sidebar.map((item) => (
+                    <SidebarCard item={item} />
+                ))}
+            </div>
+        </div>
+	</div>
+</section>
