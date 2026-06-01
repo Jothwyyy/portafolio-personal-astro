@@ -50,10 +50,20 @@
 	color: inherit;
 }
 
+.wrapper.style4 {
+	background: var(--color-white);
+	color: inherit;
+	padding: 4em;
+}
+
 @media screen and (max-width: 1280px) {
 	.wrapper {
 		margin-bottom: 4em;
 		padding: 4em 3em;
+	}
+
+	.wrapper.style4 {
+		padding: 3em;
 	}
 }
 
@@ -74,11 +84,19 @@
 	.wrapper.style2 {
 		background-size: 15em;
 	}
+
+	.wrapper.style4 {
+		padding: 2.5em;
+	}
 }
 
 @media screen and (max-width: 840px) {
 	.wrapper.special-alt {
 		text-align: center;
+	}
+
+	.wrapper.style4 {
+		padding-bottom: 3em;
 	}
 }
 
@@ -99,5 +117,10 @@
 	.wrapper.style2 {
 		background-size: 10em;
 		padding: 2.25em 1.5em;
+	}
+
+	.wrapper.style4 {
+		background-size: 10em;
+		padding: 1.5em 1.5em 3em 1.5em;
 	}
 }
