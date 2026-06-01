@@ -8,6 +8,7 @@ tags:
   - twenty
   - contact
 icon: solid fa-envelope
+group: page
 ---
 
 ## Get In Touch

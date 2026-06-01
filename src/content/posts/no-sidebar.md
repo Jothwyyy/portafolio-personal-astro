@@ -8,6 +8,7 @@ tags:
   - twenty
   - layout
 icon: solid fa-mobile-alt
+group: page
 ---
 
 ## And Finally There's No Sidebar

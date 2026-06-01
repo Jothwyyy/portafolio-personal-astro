@@ -9,7 +9,12 @@ const posts = defineCollection({
 	schema: z.object({
 		title: z.string(),
 		description: z.string(),
-		imageLink: z.string()
+		imageLink: z.string().optional(),
+		pubDate: z.coerce.date().optional(),
+		draft: z.boolean().default(false),
+		tags: z.array(z.string()).default([]),
+		icon: z.string().optional(),
+		group: z.enum(['home', 'page']).default('page'),
 	}),
 });
 

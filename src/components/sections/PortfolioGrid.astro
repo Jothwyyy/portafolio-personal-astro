@@ -1,20 +1,32 @@
 ---
 import SectionTitle from '../common/SectionTitle.astro';
 import { homePage } from '../../data/home';
+import { getCollection } from 'astro:content';
 
+const headerType = homePage.sections.three.headerType;
 const section = homePage.sections.three;
-const headerType = homePage.sections.three.headerType
+
+const posts = (await getCollection('posts'))
+	.filter((post) => post.data.group === 'home')
+	.slice(0, 4);
 ---
 
 <section class="wrapper style3 container special">
-	<SectionTitle headerType={headerType} title={section.title} description={section.description} />
-	<div class="row">
-		{section.items.map((item) => (
-			<div class="col-6 col-12-narrower">
-				<section>
-					<h3>{item.title}</h3>
-				</section>
-			</div>
-		))}
-	</div>
+  <SectionTitle 
+    headerType={headerType} 
+    title={section.title} 
+    description={section.description} 
+  />
+
+  <div class="row">
+    {posts.map((post) => (
+      <div class="col-6 col-12-narrower">
+        <section>
+			<a href="#" class="image featured"><img src={post.data.imageLink} /></a>
+			<h3>{post.data.title}</h3>
+			<p>{post.data.description}</p>
+        </section>
+      </div>
+    ))}
+  </div>
 </section>

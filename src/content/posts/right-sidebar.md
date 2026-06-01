@@ -8,6 +8,7 @@ tags:
   - twenty
   - layout
 icon: solid fa-tablet-alt
+group: page
 ---
 
 ## Behold the Right Sidebar

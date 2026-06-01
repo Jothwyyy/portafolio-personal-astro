@@ -8,6 +8,7 @@ tags:
   - twenty
   - layout
 icon: solid fa-laptop
+group: page
 ---
 
 ## Behold the Left Sidebar
