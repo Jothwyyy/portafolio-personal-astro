@@ -49,6 +49,7 @@ src/
 - `components/sections/`: secciones principales de la home y bloques visuales equivalentes a la plantilla original.
 - `components/common/`: piezas reutilizables como botones, iconos y títulos de sección.
 - `data/`: contenido estructurado de la home y configuración simple del sitio.
+- `data/`: además de la home, se amplió para soportar páginas internas desacopladas como `contact`, `left-sidebar`, `right-sidebar` y `no-sidebar`.
 - `content/`: colección de contenido preparada para usar Astro Content Collections.
 - `styles/common/`: estilos reutilizables transversales.
 - `styles/layout/`: sistema de grid, wrappers y estructuras generales.
@@ -93,6 +94,10 @@ Ejemplos:
 - `Features.astro`
 - `PortfolioGrid.astro`
 - `Cta.astro`
+- `LeftSidebarHeader.astro`
+- `LeftSidebarMain.astro`
+- `SidebarContent.astro`
+- `RelatedCards.astro`
 
 Esta clasificación permitió migrar la home de forma progresiva, manteniendo una estructura cercana al vendor y evitando una fragmentación excesiva del HTML.
 
@@ -103,6 +108,7 @@ Uno de los trabajos principales de la migración consistió en separar el `main.
 #### Capa común
 
 - `common/button.css`: botones y listas de botones.
+- `common/forms.css`: inputs, textarea, focus y placeholders del formulario de la plantilla.
 - `common/icons.css`: iconos sociales, destacados y listas de iconos.
 - `common/image.css`: comportamiento base de imágenes (`.image`, `.image.featured`, `.image.fit`).
 
@@ -176,6 +182,33 @@ Se introdujo `theme.css` como punto central de definición cromática, reemplaza
 ### 4.6 Unificación de contenido en colección
 
 Los contenidos que se encontraban fuera de una colección fueron absorbidos dentro de `src/content/posts/`, con un esquema que distingue entre elementos usados en la home y contenido derivado de páginas del vendor.
+
+### 4.7 Migración de páginas internas
+
+Una vez estabilizada la arquitectura de la home, el proyecto avanzó hacia la migración de páginas internas derivadas del vendor.
+
+#### Página Contact
+
+La página `contact` fue refactorizada mediante una fuente de datos estructurada (`data/contact.js`) y una composición basada en Astro que conserva la estructura original del template:
+
+- `article#main`
+- `header.special.container`
+- `wrapper style4 special container medium`
+- `row gtr-50`
+
+Asimismo, se restauró la variante `.wrapper.style4` y se extrajeron los estilos propios del formulario a `common/forms.css`.
+
+#### Página Left Sidebar
+
+La página `left-sidebar` comenzó a migrarse con una estrategia modular orientada a reutilización. Para ello se definieron componentes específicos para:
+
+- encabezado de la página,
+- tarjetas del sidebar,
+- contenido principal,
+- ensamblado del bloque lateral,
+- y tarjetas relacionadas.
+
+Esta decisión establece una base técnica reutilizable para páginas equivalentes como `right-sidebar`.
 
 ## 5. Consideraciones Importantes
 
@@ -253,6 +286,29 @@ Solución aplicada:
 
 - eliminar esas restricciones para restaurar el comportamiento original.
 
+#### Icono desalineado en la página de contacto
+
+Causa principal:
+
+- importación incorrecta del componente del icono,
+- y estructura del header distinta a la del vendor.
+
+Solución aplicada:
+
+- uso correcto de `Icon.astro`,
+- alineación del `header.special.container` con la estructura original,
+- y ajuste fino del espaciado en `section-article.css`.
+
+#### Recuadro faltante alrededor del formulario
+
+Causa principal:
+
+- ausencia de `.wrapper.style4` en la capa de layout.
+
+Solución aplicada:
+
+- restauración de `.wrapper.style4` y sus breakpoints dentro de `layout/wrapper.css`.
+
 ### 5.5 Decisiones técnicas relevantes
 
 - Se evitó una arquitectura excesivamente compleja.
@@ -261,6 +317,9 @@ Solución aplicada:
 - Se centralizó la paleta de color en `theme.css`.
 - Se consolidó la carga de estilos en `globals.css` y `BaseLayout`.
 - Se preparó la colección `posts` para soportar evolución futura del contenido.
+- Se amplió `PageLayout` para soportar variantes de header compartido por página.
+- Se decidió migrar páginas laterales mediante composición modular en lugar de páginas monolíticas.
+- Se separaron los estilos del formulario en un módulo común para preservar reutilización y orden arquitectónico.
 
 ## 6. Conclusión
 
