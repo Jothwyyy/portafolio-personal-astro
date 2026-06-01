@@ -7,9 +7,11 @@ import Features from '../components/sections/Features.astro';
 import PortfolioGrid from '../components/sections/PortfolioGrid.astro';
 import Cta from '../components/sections/Cta.astro';
 import { buildPageTitle } from '../lib/seo';
+
+const headerType = "alt"
 ---
 
-<PageLayout title={buildPageTitle('Inicio')} bodyClass="index">
+<PageLayout title={buildPageTitle('Inicio')} bodyClass="index" headerType={headerType}>
 	<Banner />
 	<article id="main">
 		<Intro />

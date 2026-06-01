@@ -6,17 +6,19 @@ import Footer from '../components/layout/Footer.astro';
 interface Props {
 	title?: string;
 	bodyClass?: string;
+	headerType?: string;
 }
 
 const {
 	title,
 	bodyClass = '',
+	headerType = '',
 } = Astro.props;
 ---
 
 <BaseLayout title={title} bodyClass={bodyClass}>
 	<div id="page-wrapper">
-		<Header headerType={null}/>
+		<Header headerType={headerType} />
 		<main>
 			<slot />
 		</main>
