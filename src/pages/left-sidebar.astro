@@ -8,7 +8,7 @@ import { leftSidebarPage } from '../data/leftSidebar';
 ---
 
 <PageLayout title={buildPageTitle('Left Sidebar')} bodyClass='left-sidebar is-preload'>
-	<article id="main">
+	<article id="main" class="left-sidebar-page">
 		<LeftSidebarHeader header={leftSidebarPage.header} />
 		<LeftSidebarMain sidebar={leftSidebarPage.sidebar} content={leftSidebarPage.content} />
 		<RelatedCards items={leftSidebarPage.related} />

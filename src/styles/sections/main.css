@@ -28,6 +28,10 @@ body.index #main {
 	padding-top: 5em;
 }
 
+#main.left-sidebar-page {
+	font-size: 0.95em;
+}
+
 @media screen and (max-width: 980px) {
 	#main {
 		background-size: 15em;

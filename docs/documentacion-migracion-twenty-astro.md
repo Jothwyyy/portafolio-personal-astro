@@ -635,3 +635,50 @@ Quiero que respondas con:
 
 No cambies la apariencia original del formulario salvo que sea necesario para mejorar la organización del código.
 ```
+
+### A.7 Modularización de la página Left Sidebar
+
+```text
+Actúa como un desarrollador frontend experto en Astro, HTML semántico y arquitectura modular de componentes.
+
+Estoy migrando la página `left-sidebar.html` de una plantilla HTML5UP a un proyecto Astro y necesito refactorizarla de manera modular, reutilizable y fiel a la estructura visual original.
+
+Objetivo:
+Reconstruir la página Left Sidebar en Astro utilizando una arquitectura desacoplada basada en componentes, manteniendo la apariencia y la organización del template original.
+
+Contexto del proyecto:
+
+* El proyecto está construido con Astro.
+* La plantilla original proviene de HTML5UP.
+* Ya existe una arquitectura con `layouts`, `components`, `sections`, `pages`, `data` y `styles`.
+* Ya existe una fuente de datos estructurada para la página left sidebar.
+* Quiero evitar una página monolítica con mucho HTML repetido.
+* Quiero que el resultado sea mantenible y reutilizable para futuras páginas similares, como `right-sidebar`.
+
+Tareas que debes realizar:
+
+1. Analizar la estructura de `left-sidebar.html` original.
+2. Identificar los bloques visuales y estructurales que conviene separar en componentes.
+3. Proponer una estructura modular clara para la página.
+4. Crear componentes reutilizables cuando tenga sentido, por ejemplo para tarjetas del sidebar o contenido principal.
+5. Mantener las clases originales del template cuando sean necesarias para preservar los estilos existentes.
+6. Usar la data estructurada ya creada para poblar la página.
+7. Dejar `src/pages/left-sidebar.astro` como ensamblador de alto nivel y no como una página con HTML duplicado.
+8. Mantener fidelidad con el layout original:
+
+   * header especial,
+   * columna de sidebar,
+   * columna de contenido,
+   * sección inferior de tarjetas relacionadas.
+9. Reutilizar componentes comunes del proyecto cuando sea conveniente.
+10. Validar que la implementación compile correctamente en Astro.
+
+Quiero que respondas con:
+
+* una propuesta breve de estructura modular,
+* la lista de componentes a crear,
+* el código necesario para implementar la página,
+* y una recomendación de commits secuenciales para registrar el trabajo.
+
+No cambies la apariencia original de la página salvo que sea necesario para adaptar correctamente la estructura a Astro.
+```
