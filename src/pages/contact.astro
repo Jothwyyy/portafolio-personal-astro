@@ -1,11 +1,46 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro';
+import Icon from '../components/common/Icon.astro';
 import { buildPageTitle } from '../lib/seo';
+import { contactPage } from '../data/contact';
+
+const headerType = 'special container';
 ---
 
 <PageLayout title={buildPageTitle('Contacto')}>
-	<section class="wrapper style1 container">
-		<h2>Contacto</h2>
-		<p>Pagina base para migrar `contact.html` desde la plantilla Twenty.</p>
-	</section>
+	<article id="main">
+		<header class={headerType}>
+			<Icon name={contactPage.header.icon} label={contactPage.header.title} />
+			<h2>{contactPage.header.title}</h2>
+			<p>{contactPage.header.description}</p>
+		</header>
+
+		<section class="wrapper style4 special container medium">
+			<div class="content">
+				<form>
+					<div class="row gtr-50">
+						{contactPage.form.fields.map((field) => (
+							<div class={field.wrapperClass}>
+								<input type={field.type} name={field.name} placeholder={field.placeholder} />
+							</div>
+						))}
+
+						<div class={contactPage.form.message.wrapperClass}>
+							<textarea
+								name={contactPage.form.message.name}
+								placeholder={contactPage.form.message.placeholder}
+								rows={contactPage.form.message.rows}
+							/>
+						</div>
+
+						<div class={contactPage.form.submit.wrapperClass}>
+							<ul class="buttons">
+								<li><input type="submit" class="special" value={contactPage.form.submit.label} /></li>
+							</ul>
+						</div>
+					</div>
+				</form>
+			</div>
+		</section>
+	</article>
 </PageLayout>
