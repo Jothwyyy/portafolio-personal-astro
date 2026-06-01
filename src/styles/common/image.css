@@ -1,0 +1,35 @@
+/* Image */
+
+.image {
+	border: 0;
+	position: relative;
+}
+
+.image:before {
+	background: url("/assets/css/images/overlay.png");
+	content: '';
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.image.fit {
+	display: block;
+}
+
+.image.fit img {
+	display: block;
+	width: 100%;
+}
+
+.image.featured {
+	display: block;
+	margin: 0 0 2em 0;
+}
+
+.image.featured img {
+	display: block;
+	width: 100%;
+}

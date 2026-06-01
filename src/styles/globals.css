@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,900");
 @import url("./theme.css");
 @import url("./common/button.css");
+@import url("./common/image.css");
 @import url("./common/icons.css");
 @import url("./layout/grid.css");
 @import url("./layout/wrapper.css");
