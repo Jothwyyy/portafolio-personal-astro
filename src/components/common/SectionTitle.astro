@@ -12,7 +12,7 @@ const {
 } = Astro.props;
 ---
 
-<header class=`"${headerType}"`>
-	<h2>{title}</h2>
-	{description && <p>{description}</p>}
+<header class={headerType}>
+	<h2 set:html={title} />
+	{description && <p set:html={description} />}
 </header>

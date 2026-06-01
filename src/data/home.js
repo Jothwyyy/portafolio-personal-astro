@@ -1,21 +1,20 @@
 export const homePage = {
 	banner: {
 		title: 'TWENTY',
-		description: 'This is Twenty, a free responsive template by ',
-		author: 'HTML5 UP',
+		description: 'This is <strong>Twenty</strong>, a free<br />responsive template<br />by <a href="https://html5up.net">HTML5 UP</a>.',
 		cta: {
 			href: '#main',
 			label: 'Tell Me More',
 		},
 	},
 	intro: {
-		title: 'As this is my twentieth freebie for HTML5 UP I decided to give it a really creative name.',
-		description: "Turns out Twenty was the best I could come up with. Anyway, lame name aside, it's minimally designed, fully responsive, built on HTML5/CSS3, and, like all my stuff, released for free under the Creative Commons Attribution 3.0 license. Have fun!",
+		title: 'As this is my <strong>twentieth</strong> freebie for HTML5 UP<br />I decided to give it a really creative name.',
+		description: 'Turns out <strong>Twenty</strong> was the best I could come up with. Anyway, lame name aside,<br />it\'s minimally designed, fully responsive, built on HTML5/CSS3,<br />and, like all my stuff,<br />released for free under the <a href="https://html5up.net/license">Creative Commons Attribution 3.0</a> license. Have fun!',
 	},
 	sections: {
 		one: {
-			title: 'Behold the icons that visualize what you are all about.',
-			description: 'Bloque reservado para migrar la seccion editorial con CTA e iconos destacados de la plantilla original.',
+			title: 'Behold the <strong>icons</strong> that visualize what you\'re all about. or just take up space. your call bro.',
+			description: 'Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu comteger ut fermentum lorem. Lorem ipsum dolor sit amet. Sed tristique purus vitae volutpat ultrices. eu elit eget commodo. Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo.',
 			cta: {
 				href: '#',
 				label: 'Find Out More',
@@ -32,45 +31,35 @@ export const homePage = {
 		two: {
 			items: [
 				{
-					title: 'Componentes',
-					description: 'Secciones separadas para migrar la home sin mezclar todo en una sola pagina.',
+					title: 'This is Something',
+					description: 'Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.',
 				},
 				{
-					title: 'Datos',
-					description: 'Contenido desacoplado en archivos simples para facilitar mantenimiento.',
+					title: 'Also Something',
+					description: 'Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.',
 				},
 				{
-					title: 'Layouts',
-					description: 'Estructura global preparada para compartir head, header y footer.',
+					title: 'Probably Something',
+					description: 'Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.',
 				},
 			],
 		},
 		three: {
 			headerType: 'major',
-			title: 'Bloques del portafolio',
-			description: 'Espacio reservado para proyectos, casos de estudio o trabajos destacados.',
-			items: [
-				{
-					title: 'Proyecto 1',
-					description: 'Placeholder para el primer proyecto destacado.',
-				},
-				{
-					title: 'Proyecto 2',
-					description: 'Placeholder para el segundo proyecto destacado.',
-				},
-			],
+			title: 'Next look at this <strong>cool stuff</strong>',
+			description: undefined,
 		},
 	},
 	cta: {
-		title: 'Listo para continuar la migracion?',
-		description: 'La estructura ya esta lista para reemplazar placeholders por el contenido real.',
+		title: 'Ready to do <strong>something</strong>?',
+		description: 'Proin a ullamcorper elit, et sagittis turpis integer ut fermentum.',
 		primary: {
-			href: '/contact',
-			label: 'Contacto',
+			href: '#',
+			label: 'Take My Money',
 		},
 		secondary: {
-			href: '/',
-			label: 'Inicio',
+			href: '#',
+			label: 'LOL Wut',
 		},
 	},
 };

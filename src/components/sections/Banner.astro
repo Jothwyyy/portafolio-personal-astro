@@ -8,10 +8,7 @@ import { homePage } from '../../data/home';
 		<header>
 			<h2>{homePage.banner.title}</h2>
 		</header>
-		<p>
-			{homePage.banner.description}
-			<a href="https://html5up.net">{homePage.banner.author}</a>.
-		</p>
+		<p set:html={homePage.banner.description} />
 		<footer>
 			<Button href={homePage.banner.cta.href} label={homePage.banner.cta.label} />
 		</footer>

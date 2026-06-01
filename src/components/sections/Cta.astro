@@ -5,8 +5,8 @@ import { homePage } from '../../data/home';
 
 <section id="cta">
 	<header>
-		<h2>{homePage.cta.title}</h2>
-		<p>{homePage.cta.description}</p>
+		<h2 set:html={homePage.cta.title} />
+		<p set:html={homePage.cta.description} />
 	</header>
 	<footer>
 		<ul class="buttons">

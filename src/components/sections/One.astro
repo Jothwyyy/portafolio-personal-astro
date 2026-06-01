@@ -10,7 +10,7 @@ const section = homePage.sections.one;
 	<div class="row gtr-50">
 		<div class="col-8 col-12-narrower">
 			<header>
-				<h2>{section.title}</h2>
+				<h2 set:html={section.title} />
 			</header>
 			<p>{section.description}</p>
 			<footer>

@@ -5,6 +5,6 @@ import Icon from '../common/Icon.astro';
 
 <header class="special container">
 	<Icon name="solid fa-chart-bar" />
-	<h2>{homePage.intro.title}</h2>
-	<p>{homePage.intro.description}</p>
+	<h2 set:html={homePage.intro.title} />
+	<p set:html={homePage.intro.description} />
 </header>
